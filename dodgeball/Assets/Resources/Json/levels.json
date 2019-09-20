@@ -1,0 +1,170 @@
+{
+    "levels": [{
+            "stages": [{
+                    "objects": [{
+                        "type": "enemy",
+                        "x": 0,
+                        "z": 6
+                    }]
+                },
+                {
+                    "objects": [{
+                            "type": "enemy",
+                            "x": -1,
+                            "z": 6
+                        },
+                        {
+                            "type": "enemy",
+                            "x": 1,
+                            "z": 6
+                        },
+                        {
+                            "type": "friend",
+                            "x": 0,
+                            "z": 4
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "stages": [{
+                    "objects": [{
+                            "type": "enemy",
+                            "x": -1,
+                            "z": 6
+                        },
+                        {
+                            "type": "enemy",
+                            "x": 1,
+                            "z": 6
+                        },
+                        {
+                            "type": "enemy",
+                            "x": 0,
+                            "z": 4.5
+                        },
+                        {
+                            "type": "friend",
+                            "x": 0,
+                            "z": 6
+                        }
+                    ]
+                },
+                {
+                    "objects": [{
+                            "type": "enemy",
+                            "x": 0,
+                            "z": 7
+                        },
+                        {
+                            "type": "obstacle",
+                            "x": 0,
+                            "z": 4.5,
+                            "width": 1
+                        }
+                    ]
+                },
+                {
+                    "objects": [{
+                            "type": "friend",
+                            "x": 0,
+                            "z": 8
+                        },
+                        {
+                            "type": "enemy",
+                            "x": 0,
+                            "z": 6
+                        },
+                        {
+                            "type": "friend",
+                            "x": 0,
+                            "z": 4
+                        },
+                        {
+                            "type": "enemy",
+                            "x": -1,
+                            "z": 12,
+                            "walk": {
+                                "speed": 1.5
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "stages": [{
+                    "objects": [{
+                            "type": "obstacle",
+                            "x": 1,
+                            "z": 5,
+                            "angle": 45,
+                            "width": 1
+                        },
+                        {
+                            "type": "obstacle",
+                            "x": -1,
+                            "z": 5,
+                            "angle": 45,
+                            "width": 1
+                        },
+                        {
+                            "type": "enemy",
+                            "x": 0,
+                            "z": 6
+                        },
+                        {
+                            "type": "enemy",
+                            "x": 0,
+                            "z": 8
+                        }
+                    ]
+                },
+                {
+                    "objects": [{
+                            "type": "enemy",
+                            "x": 0,
+                            "z": 8
+                        },
+                        {
+                            "type": "friend",
+                            "x": 0,
+                            "z": 6
+                        },
+                        {
+                            "type": "friend",
+                            "x": 0,
+                            "z": 4
+                        },
+                        {
+                            "type": "friend",
+                            "x": -1,
+                            "z": 12,
+                            "patrol": {
+                                "speed": 1.5,
+                                "points": [{
+                                        "x": 1,
+                                        "z": 2
+                                    },
+                                    {
+                                        "x": 1,
+                                        "z": 2
+                                    },
+                                    {
+                                        "x": 1,
+                                        "z": 2
+                                    },
+                                    {
+                                        "x": 1,
+                                        "z": 2
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

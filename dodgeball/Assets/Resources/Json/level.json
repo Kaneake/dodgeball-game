@@ -1,0 +1,221 @@
+{
+  "stages": [
+    {
+      "enemies": [
+        {
+          "transform": {
+            "localPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 5.0
+            },
+            "localScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "localRotation": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0,
+              "w": 1.0
+            }
+          },
+          "walk": null,
+          "patrol": null
+        }
+      ],
+      "friends": [
+        {
+          "transform": {
+            "localPosition": {
+              "x": -1.5,
+              "y": 0.0,
+              "z": 5.0
+            },
+            "localScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "localRotation": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0,
+              "w": 0.0
+            }
+          },
+          "walk": null,
+          "patrol": {
+            "points": [
+              {
+                "x": -1.5,
+                "y": 0.0,
+                "z": 5.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 3.5
+              },
+              {
+                "x": 1.5,
+                "y": 0.0,
+                "z": 5.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 6.5
+              }
+            ],
+            "pingPong": false,
+            "speed": 1.0
+          }
+        },
+        {
+          "transform": {
+            "localPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 6.5
+            },
+            "localScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "localRotation": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0,
+              "w": 0.0
+            }
+          },
+          "walk": null,
+          "patrol": {
+            "points": [
+              {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 6.5
+              },
+              {
+                "x": -1.5,
+                "y": 0.0,
+                "z": 5.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 3.5
+              },
+              {
+                "x": 1.5,
+                "y": 0.0,
+                "z": 5.0
+              }
+            ],
+            "pingPong": false,
+            "speed": 1.0
+          }
+        },
+        {
+          "transform": {
+            "localPosition": {
+              "x": 1.5,
+              "y": 0.0,
+              "z": 5.0
+            },
+            "localScale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "localRotation": {
+              "x": 0.0,
+              "y": 1.0,
+              "z": 0.0,
+              "w": 0.0
+            }
+          },
+          "walk": null,
+          "patrol": {
+            "points": [
+              {
+                "x": 1.5,
+                "y": 0.0,
+                "z": 5.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 6.5
+              },
+              {
+                "x": -1.5,
+                "y": 0.0,
+                "z": 5.0
+              },
+              {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 3.5
+              }
+            ],
+            "pingPong": false,
+            "speed": 1.0
+          }
+        },
+        {
+            "transform": {
+                "localPosition": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 3.5
+                },
+                "localScale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "localRotation": {
+                    "x": 0.0,
+                    "y": 1.0,
+                    "z": 0.0,
+                    "w": 0.0
+                }
+            },
+            "walk": null,
+            "patrol": {
+                "points": [
+                    {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 3.5
+                    },
+                    {
+                        "x": 1.5,
+                        "y": 0.0,
+                        "z": 5
+                    },
+                    {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 6.5
+                    },
+                    {
+                        "x": -1.5,
+                        "y": 0.0,
+                        "z": 5
+                    }
+                ],
+                "pingPong": false,
+                "speed": 1.0
+            }
+        }
+      ],
+      "obstacles": []
+    }
+  ]
+}
