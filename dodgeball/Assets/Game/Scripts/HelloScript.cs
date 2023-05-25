@@ -6,22 +6,30 @@ using UnityEngine.UI;
 public class HelloScript : MonoBehaviour
 {
     public Text helloTitle;
-    public string playerName = "Friend";
+    public InputField textBox;
+    public string playerName;
 
-    void onUpdate ()
+    // void onUpdate ()
+    // {
+    //     helloTitle.text = $"Hello, {playerName}!";
+    // }
+    void Start ()
     {
-        helloTitle.text = $"Hello, {playerName}!";
-    }
-    public void updateHelloTitle()
-    {
-        helloTitle.text = $"Hello, {playerName}!";
-        Debug.Log("New hello text is: " + helloTitle.text);
+        string playerPrefString = PlayerPrefs.GetString("name");
+        playerName = string.IsNullOrEmpty(playerPrefString) ? "Friend" : playerPrefString;
+        helloTitle.text = $"Hello {playerName}!";
+        //PlayerPrefs.GetString("name");
+        
     }
 
-    //check if name is entered and saved
-    public void readNameInput (string nameInput) {
-        playerName = nameInput;
-        Debug.Log("nameInput saved: " + playerName);
-        helloTitle.text = $"Hello, {playerName}!";
+    //Save the entered name
+    public void saveNameInput () {
+        PlayerPrefs.SetString("name", textBox.text);
+        
+        //Debug.Log("Your name is " + PlayerPrefs.GetString("name"));
+        
+        string playerPrefString = PlayerPrefs.GetString("name");
+        playerName = string.IsNullOrEmpty(playerPrefString) ? "Friend" : playerPrefString;
+        helloTitle.text = $"Hello {playerName}!";
     }
 }
