@@ -53,6 +53,6 @@ public class DragAndShoot : MonoBehaviour
 
         rb.AddForce(new Vector3(Force.x, 0, Force.y) * forceMultiplier);
         isShoot = true;
-        Spawner.Instance.NewSpawnRequest();
+        BallSpawn.Instance.NewSpawnRequest();
     }
 }

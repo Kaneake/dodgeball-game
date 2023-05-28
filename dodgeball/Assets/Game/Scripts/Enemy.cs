@@ -2,18 +2,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Enemy;
-
 public class Enemy : MonoBehaviour
 {
 
-    void Start()
-    {
-       
-    }
+ //EnemyCollisionHandler
+    private void OnCollisionEnter(Collision other) {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            
+            Destroy(other.gameObject, 0.6f);
+            //Destroy(other.gameObject);
+            Debug.Log("enemy hit");
+        }
+    } 
 
-    void Update()
-    {
-
-    }
+    // private void OnDestroy() {
+    //     EnemySpawner.Instance.SpawnNewObject();
+    // }
 }

@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FxTemporaire
   - HUD
+  - Enemy Body
+  - Enemy
   layers:
   - Default
   - TransparentFX

@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class BallSpawn : MonoBehaviour
 {
     private Vector3 SpawnPos;
     public GameObject spawnObject;
     public Transform SpawnPlaceholder;
-    private float newSpawnDuration = 1.5f;
 
     #region Singleton
 
-    public static Spawner Instance;
+    public static BallSpawn Instance;
     
     private void Awake()
     {
@@ -22,16 +21,16 @@ public class Spawner : MonoBehaviour
 
     private void Start() {
         SpawnPos = SpawnPlaceholder.position;
-        //SpawnNewObject();
     }
 
     void SpawnNewObject()
     {
+
         Instantiate(spawnObject, SpawnPos, Quaternion.identity);
     }
 
     public void NewSpawnRequest()
     {
-        Invoke("SpawnNewObject", newSpawnDuration);
+        Invoke("SpawnNewObject", 0.5f);
     }
 }
