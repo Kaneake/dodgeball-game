@@ -2,18 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static Enemy;
-
 public class Enemy : MonoBehaviour
 {
-
-    void Start()
-    {
-       
-    }
-
-    void Update()
-    {
-
+    //EnemyCollisionHandler
+    private void OnCollisionEnter(Collision other) {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            Destroy(other.gameObject, 0.6f);
+            Debug.Log("enemy hit");
+        }
+    } 
+    public void OnDestroy() {
+        ScoreKeeper.Instance.IncreaseScore();
     }
 }

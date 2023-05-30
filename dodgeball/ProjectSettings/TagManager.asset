@@ -6,6 +6,9 @@ TagManager:
   tags:
   - FxTemporaire
   - HUD
+  - Enemy Body
+  - Enemy
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -17,9 +20,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Player
+  - Ignore Collisions
+  - Enemies
   - 
   - 
   - 

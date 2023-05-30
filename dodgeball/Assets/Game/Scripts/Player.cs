@@ -39,4 +39,14 @@ public class Player : MonoBehaviour
     {
        
     }
+
+     private void OnCollisionEnter(Collision other) {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            
+            Destroy(other.gameObject);
+            
+            Debug.Log("ball hit");
+        }
+    }   
 }
