@@ -24,6 +24,10 @@ public class Trajectory : MonoBehaviour
 
     #endregion
 
+    // private void Start() {
+    //     transform.position = new Vector3(0, 0, 3);
+    // }
+
     public void UpdateTrajectory(Vector3 forceVector, Rigidbody rigidBody, Vector3 startingPoint)
     {
         Vector3 velocity = (forceVector / rigidBody.mass)*Time.fixedDeltaTime; //F/mass = a/change in time = v

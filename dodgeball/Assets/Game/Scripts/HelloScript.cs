@@ -9,10 +9,6 @@ public class HelloScript : MonoBehaviour
     public InputField textBox;
     public string playerName;
 
-    // void onUpdate ()
-    // {
-    //     helloTitle.text = $"Hello, {playerName}!";
-    // }
     void Start ()
     {
         string playerPrefString = PlayerPrefs.GetString("name");

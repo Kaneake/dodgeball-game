@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    private float spawnTimeInterval = Random.Range(3f, 9f);
     private Vector3 SpawnPos;
     public GameObject spawnObject;
     public Transform SpawnPlaceholder;
@@ -34,15 +33,5 @@ public class EnemySpawner : MonoBehaviour
 
     public void InvokeSpawning(){
         InvokeRepeating("SpawnNewObject", 1f, Random.Range(3f, 6f));
-    }
-
-    // IEnumerator EnemySpawnLoop()
-    // {
-    //     while (true)
-    //     {
-    //         Instantiate(enemyPrefab, SpawnPos, Quaternion.identity);
-    //         yield return new WaitForSeconds(spawnTimeInterval);
-    //     }
-    // }
-      
+    }    
 }
